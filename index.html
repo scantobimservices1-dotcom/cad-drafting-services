@@ -25,14 +25,13 @@
             theme: {
                 extend: {
                     colors: {
-                        // User specified palette
                         brand: {
                             aqua: '#5CD7DB',
                             black: '#000000',
                             white: '#ffffff',
                             border: '#d9e3e6',
                             gray: '#595959',
-                            dark: '#293333', // lighterblack
+                            dark: '#293333',
                             offwhite: '#F7FCFC',
                             lightgray: '#d2d2d2'
                         }
@@ -48,16 +47,14 @@
     <style>
         .service-card:hover .service-icon {
             transform: scale(1.1);
-            color: #5CD7DB; /* brand-aqua */
+            color: #5CD7DB;
         }
         .hero-overlay {
-            /* Updated to use brand-dark (#293333) with opacity */
             background: linear-gradient(rgba(41, 51, 51, 0.85), rgba(41, 51, 51, 0.7));
         }
         html {
             scroll-behavior: smooth;
         }
-        /* Custom underline animation for links */
         .hover-underline-animation {
             display: inline-block;
             position: relative;
@@ -89,7 +86,7 @@
                 <div class="flex items-center">
                     <!-- Logo -->
                     <a href="index.html" class="flex items-center">
-                        <img src="assets/Logo.jpg" alt="Tesla CAD Solutions" style="height: 80px; width: auto;">
+                        <img src="assets/Logo.jpg" alt="Tesla CAD Solutions Company Logo" title="Tesla CAD Solutions Logo" width="200" height="80" style="height: 80px; width: auto;">
                     </a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
@@ -98,7 +95,7 @@
                 </div>
                 
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-brand-gray hover:text-brand-aqua focus:outline-none">
+                    <button id="mobile-menu-btn" aria-expanded="false" aria-label="Toggle mobile menu" class="text-brand-gray hover:text-brand-aqua focus:outline-none">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -117,7 +114,7 @@
     <header class="relative h-[600px] flex items-center justify-center text-center text-white" id="home">
         <!-- Background Image -->
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" alt="Architectural Drafting" class="w-full h-full object-cover grayscale-[30%]">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" alt="Detailed Architectural Drafting Blueprint Background" title="Precision CAD Drafting Background" width="1920" height="1080" loading="eager" fetchpriority="high" class="w-full h-full object-cover grayscale-[30%]">
             <div class="hero-overlay absolute inset-0"></div>
         </div>
         
@@ -158,7 +155,7 @@
                 </div>
                 <div class="relative group">
                     <div class="absolute -inset-2 bg-brand-aqua rounded-lg opacity-20 group-hover:opacity-40 transition duration-500 transform rotate-2"></div>
-                    <img src="https://www.teslacad.com.au/images/cad-services-banner-image-1.webp" alt="Engineers working on CAD" class="relative rounded-lg shadow-xl w-full object-cover h-80 filter contrast-125">
+                    <img src="https://www.teslacad.com.au/images/cad-services-banner-image-1.webp" alt="Professional engineers working collaboratively on CAD models at their workstations" title="Engineers working on CAD projects" width="600" height="400" loading="lazy" class="relative rounded-lg shadow-xl w-full object-cover h-80 filter contrast-125">
                 </div>
             </div>
         </div>
@@ -176,7 +173,7 @@
                 <!-- Architectural Drafting -->
                 <div class="service-card bg-brand-white rounded-xl shadow-sm overflow-hidden transition duration-300 hover:shadow-xl border border-brand-border hover:border-brand-aqua group flex flex-col">
                     <div class="h-48 overflow-hidden">
-                        <img src="assets/CAD Drafting Sevices.png" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <img src="assets/CAD Drafting Sevices.png" alt="3D Architectural CAD Drafting Services Visualization" title="Architectural CAD Drafting Services" width="400" height="300" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-brand-dark mb-4">CAD Drafting Services</h3>
@@ -190,7 +187,7 @@
                 <!-- Structural Drafting -->
                 <div class="service-card bg-brand-white rounded-xl shadow-sm overflow-hidden transition duration-300 hover:shadow-xl border border-brand-border hover:border-brand-aqua group flex flex-col">
                     <div class="h-48 overflow-hidden">
-                        <img src="assets/Structural-BIM-Services.png" alt="Structural BIM Services" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <img src="assets/Structural-BIM-Services.png" alt="Structural BIM Services Model showing steel frameworks" title="Structural BIM Services" width="400" height="300" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-brand-dark mb-4">Structural BIM Services</h3>
@@ -204,7 +201,7 @@
                 <!-- MEP Drafting -->
                 <div class="service-card bg-brand-white rounded-xl shadow-sm overflow-hidden transition duration-300 hover:shadow-xl border border-brand-border hover:border-brand-aqua group flex flex-col">
                     <div class="h-48 overflow-hidden">
-                        <img src="assets/MEP BIM Solutions.jpg" alt="MEP BIM Solutions" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <img src="assets/MEP BIM Solutions.jpg" alt="MEP BIM Solutions detailing mechanical, electrical, and plumbing systems" title="MEP BIM Solutions" width="400" height="300" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-brand-dark mb-4">MEP BIM Solutions</h3>
@@ -218,7 +215,7 @@
                 <!-- Mechanical Drafting -->
                 <div class="service-card bg-brand-white rounded-xl shadow-sm overflow-hidden transition duration-300 hover:shadow-xl border border-brand-border hover:border-brand-aqua group flex flex-col">
                     <div class="h-48 overflow-hidden">
-                        <img src="assets/Mechanical Drafting Services.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <img src="assets/Mechanical Drafting Services.jpg" alt="Detailed Mechanical Drafting Services and component assembly design" title="Mechanical Drafting Services" width="400" height="300" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-brand-dark mb-4">Mechanical Drafting Services</h3>
@@ -293,13 +290,13 @@
                 <p class="text-brand-gray mt-4 max-w-2xl mx-auto">Stay updated with the latest trends in CAD drafting, BIM technology, and construction methodologies in Australia.</p>
             </div>
 
-                 <!-- Blog Grid -->
+            <!-- Blog Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <!-- Post 1: Architectural Rendering -->
                 <article class="bg-brand-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition duration-300 border border-brand-border flex flex-col h-full group">
                     <div class="h-48 overflow-hidden">
-                        <img src="assets/The Role of Architectural Rendering in Modern Real Estate (1).png" alt="Architectural Rendering" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <img src="assets/The Role of Architectural Rendering in Modern Real Estate (1).png" alt="Modern realistic 3D Architectural Rendering of a real estate property" title="Architectural Rendering in Real Estate" width="400" height="300" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
                         <div class="flex justify-between items-center mb-3">
@@ -317,7 +314,7 @@
                 <!-- Post 2: BIM -->
                 <article class="bg-brand-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition duration-300 border border-brand-border flex flex-col h-full group">
                     <div class="h-48 overflow-hidden">
-                        <img src="assets/Aligning BIM with Modern Project Delivery Methods.jpeg" alt="BIM Mitigating Rework" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <img src="assets/Aligning BIM with Modern Project Delivery Methods.jpeg" alt="Graph representing BIM integration and project delivery methods" title="Aligning BIM with Delivery Methods" width="400" height="300" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
                         <div class="flex justify-between items-center mb-3">
@@ -332,12 +329,10 @@
                     </div>
                 </article>
 
-                
-
                 <!-- Post 3: Precision CAD -->
                 <article class="bg-brand-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition duration-300 border border-brand-border flex flex-col h-full group">
                     <div class="h-48 overflow-hidden">
-                        <img src="assets/Exploring the Impact of 3D Rendering Across the AEC Industry.jpg" alt="Precision CAD Drafting" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <img src="assets/Exploring the Impact of 3D Rendering Across the AEC Industry.jpg" alt="3D rendering layout representing impact across the Architecture, Engineering, and Construction industry" title="Impact of 3D Rendering in AEC" width="400" height="300" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     </div>
                     <div class="p-5 flex flex-col flex-grow">
                         <div class="flex justify-between items-center mb-3">
@@ -395,6 +390,9 @@
 
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
+            // Accessibility update: Toggle aria-expanded state
+            const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', !isExpanded);
         });
 
         // Smooth Scroll for Anchors
@@ -402,6 +400,7 @@
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 menu.classList.add('hidden'); // Close mobile menu on click
+                btn.setAttribute('aria-expanded', 'false'); // Reset accessibility state
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
