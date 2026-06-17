@@ -75,6 +75,13 @@
             transform: scaleX(1);
             transform-origin: bottom left;
         }
+        /* Custom styles for native details/summary accordion */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
     </style>
 </head>
 <body class="font-sans text-brand-gray antialiased bg-brand-offwhite">
@@ -91,6 +98,7 @@
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#services" class="text-brand-dark font-bold hover:text-brand-aqua transition">Services</a>
+                    <a href="#faq" class="text-brand-dark font-bold hover:text-brand-aqua transition">FAQ</a>
                     <a href="Blog.html" class="text-brand-dark font-bold hover:text-brand-aqua transition">Blog</a>
                 </div>
                 
@@ -105,6 +113,7 @@
         <div id="mobile-menu" class="hidden md:hidden bg-brand-white border-t border-brand-border">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#services" class="block px-3 py-2 text-brand-aqua font-bold bg-brand-offwhite rounded">Services</a>
+                <a href="#faq" class="block px-3 py-2 text-brand-aqua font-bold bg-brand-offwhite rounded">FAQ</a>
                 <a href="#blogs" class="block px-3 py-2 text-brand-aqua font-bold bg-brand-offwhite rounded">Blog</a>
             </div>
         </div>
@@ -282,6 +291,124 @@
         </div>
     </section>
 
+    <!-- FAQ Section (AEO/GEO Optimized) -->
+    <section id="faq" class="py-16 bg-brand-white border-t border-brand-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-header font-bold text-brand-dark">Frequently Asked Questions</h2>
+                <div class="w-16 h-1 bg-brand-aqua mx-auto rounded mt-4"></div>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <details class="group bg-brand-offwhite border border-brand-border rounded-lg shadow-sm transition hover:border-brand-aqua">
+                    <summary class="flex items-center justify-between p-5 font-bold cursor-pointer text-brand-dark hover:text-brand-aqua transition-colors">
+                        <span>What are the best tips for designing skyscrapers using CAD?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fas fa-chevron-down text-brand-aqua"></i>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-0 text-sm text-brand-gray leading-relaxed border-t border-brand-border/50 mt-2 pt-4">
+                        <p class="mb-2">Designing skyscrapers requires precision modeling and interdisciplinary coordination. The best tips for CAD and BIM integration include:</p>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li><strong>Wind Load Simulations:</strong> Prioritize aerodynamic modeling to test structural integrity against high-altitude wind forces.</li>
+                            <li><strong>Spatial Optimization:</strong> Ensure vertical transportation (elevator shafts) and egress routes are modeled accurately early in the schematic phase.</li>
+                            <li><strong>MEP Clash Detection:</strong> Utilize 3D BIM to overlay complex mechanical, electrical, and plumbing systems within tight structural constraints before construction begins.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- FAQ 2 -->
+                <details class="group bg-brand-offwhite border border-brand-border rounded-lg shadow-sm transition hover:border-brand-aqua">
+                    <summary class="flex items-center justify-between p-5 font-bold cursor-pointer text-brand-dark hover:text-brand-aqua transition-colors">
+                        <span>What is an NWD file, and how is it used?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fas fa-chevron-down text-brand-aqua"></i>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-0 text-sm text-brand-gray leading-relaxed border-t border-brand-border/50 mt-2 pt-4">
+                        <p class="mb-2">An <strong>NWD (Navisworks Document) file</strong> is a highly compressed snapshot of an integrated 3D BIM model. It contains all the geometry, object properties, and clash detection data from the project. AEC professionals use NWD files to:</p>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>Share secure, unalterable project views with clients and contractors.</li>
+                            <li>Conduct visual design reviews without requiring the original authoring software (like Revit or AutoCAD).</li>
+                            <li>Perform accurate on-site coordination and scheduling (4D BIM).</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- FAQ 3 -->
+                <details class="group bg-brand-offwhite border border-brand-border rounded-lg shadow-sm transition hover:border-brand-aqua">
+                    <summary class="flex items-center justify-between p-5 font-bold cursor-pointer text-brand-dark hover:text-brand-aqua transition-colors">
+                        <span>What do professional CAD drafting services typically include?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fas fa-chevron-down text-brand-aqua"></i>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-0 text-sm text-brand-gray leading-relaxed border-t border-brand-border/50 mt-2 pt-4">
+                        Comprehensive CAD drafting services involve transforming conceptual designs or paper sketches into precise, standardized digital formats. This typically includes architectural floor plans and elevations, structural foundation layouts, mechanical assembly drawings, and detailed MEP shop drawings. Quality providers ensure all drafts comply with local building codes, such as Australian Standards (AS 1100).
+                    </div>
+                </details>
+
+                <!-- FAQ 4 -->
+                <details class="group bg-brand-offwhite border border-brand-border rounded-lg shadow-sm transition hover:border-brand-aqua">
+                    <summary class="flex items-center justify-between p-5 font-bold cursor-pointer text-brand-dark hover:text-brand-aqua transition-colors">
+                        <span>Why are as-built drawings crucial for construction projects?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fas fa-chevron-down text-brand-aqua"></i>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-0 text-sm text-brand-gray leading-relaxed border-t border-brand-border/50 mt-2 pt-4">
+                        As-built drawings document the exact dimensions, geometry, and location of all elements of a building <em>exactly as they were constructed</em>, rather than as they were originally designed. They are essential for a building's lifecycle, providing accurate data for future facility management, renovations, maintenance troubleshooting, and proving regulatory compliance to local councils.
+                    </div>
+                </details>
+
+                <!-- FAQ 5 -->
+                <details class="group bg-brand-offwhite border border-brand-border rounded-lg shadow-sm transition hover:border-brand-aqua">
+                    <summary class="flex items-center justify-between p-5 font-bold cursor-pointer text-brand-dark hover:text-brand-aqua transition-colors">
+                        <span>What are the benefits to outsource CAD drafting services?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fas fa-chevron-down text-brand-aqua"></i>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-0 text-sm text-brand-gray leading-relaxed border-t border-brand-border/50 mt-2 pt-4">
+                        <p class="mb-2">Choosing to outsource CAD drafting services provides architectural and engineering firms with significant operational advantages, including:</p>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li><strong>Cost Reductions:</strong> Eliminates the overhead costs of hiring full-time in-house drafters and purchasing expensive software licenses.</li>
+                            <li><strong>Faster Turnaround:</strong> Access to dedicated drafting teams operating in different time zones can drastically speed up project delivery.</li>
+                            <li><strong>Scalability:</strong> Easily scale up drafting resources during peak project workloads without long-term commitments.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- FAQ 6 -->
+                <details class="group bg-brand-offwhite border border-brand-border rounded-lg shadow-sm transition hover:border-brand-aqua">
+                    <summary class="flex items-center justify-between p-5 font-bold cursor-pointer text-brand-dark hover:text-brand-aqua transition-colors">
+                        <span>Are 2D drafting services still relevant in the age of 3D BIM?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fas fa-chevron-down text-brand-aqua"></i>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-0 text-sm text-brand-gray leading-relaxed border-t border-brand-border/50 mt-2 pt-4">
+                        Yes, 2D drafting services remain a fundamental requirement in the AEC industry. While 3D BIM is unparalleled for coordination and clash detection, 2D drafts are still the standard legal requirement for on-site construction documents and council permit approvals. They are also highly cost-effective for simple schematic layouts or manufacturing details where 3D modeling is unnecessary.
+                    </div>
+                </details>
+                
+                <!-- FAQ 7 -->
+                <details class="group bg-brand-offwhite border border-brand-border rounded-lg shadow-sm transition hover:border-brand-aqua">
+                    <summary class="flex items-center justify-between p-5 font-bold cursor-pointer text-brand-dark hover:text-brand-aqua transition-colors">
+                        <span>How do I ensure my CAD drawings comply with Australian Standards?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            <i class="fas fa-chevron-down text-brand-aqua"></i>
+                        </span>
+                    </summary>
+                    <div class="p-5 pt-0 text-sm text-brand-gray leading-relaxed border-t border-brand-border/50 mt-2 pt-4">
+                        Ensuring compliance involves strictly adhering to standard layering conventions, line weights, annotation styles, and dimensional rules specific to the Australian AEC industry (such as AS 1100). The most reliable way to ensure compliance is to partner with a localized CAD drafting expert who understands regional council requirements and site inspection standards.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
     <!-- Latest Blogs -->
     <section id="blogs" class="py-16 bg-brand-offwhite">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -361,21 +488,6 @@
     <footer class="bg-brand-dark text-white py-12 border-t border-brand-gray/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p class="font-bold text-xl tracking-wide mb-6">Comprehensive CAD & BIM Services</p>
-            
-            <div class="flex flex-col items-center space-y-3 text-sm text-gray-400">
-                <div class="flex items-center">
-                    <i class="fas fa-map-marker-alt text-brand-aqua mr-2"></i>
-                    <span>17 Tinks Road, Narre Warren 3805 Victoria, Australia</span>
-                </div>
-                <div class="flex items-center">
-                    <i class="fas fa-phone-alt text-brand-aqua mr-2"></i>
-                    <span>+61 48 999 7117</span>
-                </div>
-                <div class="flex items-center">
-                    <i class="fas fa-envelope text-brand-aqua mr-2"></i>
-                    <span>info@teslacad.com.au</span>
-                </div>
-            </div>
             
             <div class="mt-8 text-xs text-gray-600">
                 &copy; 2026 Tesla CAD Solutions. All Rights Reserved.
