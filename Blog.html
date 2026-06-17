@@ -1,117 +1,75 @@
-<!-- ... existing code ... -->
 <!DOCTYPE html>
-<html lang="en-AU">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    
-    <!-- 6. Viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-    
-    <!-- 14. GTM Head (Replace GTM-XXXXXXX with your actual ID) -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
-    
-    <!-- 4. DNS-Prefetch and Preconnects -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://images.unsplash.com">
-    <link rel="dns-prefetch" href="https://www.teslacad.com.au">
-    
-    <!-- 5. Biggest Viewport Image Preload -->
-    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80">
-    
-    <!-- 7. Canonical and Hreflang -->
-    <link rel="canonical" href="https://scantobimservices1-dotcom.github.io/cad-drafting-services/Blog.html">
-    <link rel="alternate" hreflang="en-au" href="https://scantobimservices1-dotcom.github.io/cad-drafting-services/Blog.html">
-    <link rel="alternate" hreflang="x-default" href="https://scantobimservices1-dotcom.github.io/cad-drafting-services/Blog.html">
-    
-    <!-- 15. Favicon & 17. Apple Touch Icons -->
-    <link rel="icon" type="image/x-icon" href="https://scantobimservices1-dotcom.github.io/cad-drafting-services/assets/favicon.ico">
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
-    
-    <!-- 16. Apple WebView Title -->
-    <meta name="apple-mobile-web-app-title" content="Tesla CAD">
-    <!-- 18. Theme Color -->
-    <meta name="theme-color" content="#5CD7DB">
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="iLBxWXALY9CPdG6MDZT4sAVMDmM-tji3VyzR7jopsyU" />
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://scantobimservices1-dotcom.github.io/cad-drafting-services/assets/Logo.jpg">
+    <link rel="apple-touch-icon" href="https://scantobimservices1-dotcom.github.io/cad-drafting-services/assets/Logo.jpg">
+
     <!-- SEO Meta Tags -->
-    <title>CAD Drafting Services Australia | Tesla CAD Solutions</title>
-    <meta name="description" content="Tesla CAD Solutions offers expert CAD Drafting & BIM services in Australia. We specialize in Architectural, Structural & MEP solutions. Get a quote today.">
-    <meta name="keywords" content="CAD Drafting Australia, BIM Services, Architectural Drafting, MEP Shop Drawings, Structural Drafting, Tesla CAD Solutions, 2D Drafting">
-    
-    <!-- 10. Robots Tags -->
+    <title>Blog | CAD & BIM Insights | Tesla CAD Solutions Australia</title>
+    <meta name="description" content="Stay updated with the latest trends in CAD drafting, BIM technology, MEP services, and construction methodologies in Australia by Tesla CAD Solutions.">
+    <meta name="keywords" content="CAD Blog, BIM Industry Insights, Architecture Trends Australia, MEP Updates, Drafting News">
     <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    
-    <!-- 11. OpenGraph Tags -->
-    <meta property="og:title" content="CAD Drafting Services Australia | Tesla CAD Solutions">
-    <meta property="og:locale" content="en_AU">
-    <meta property="og:url" content="https://scantobimservices1-dotcom.github.io/cad-drafting-services/Blog.html">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="Tesla CAD Solutions offers expert CAD Drafting & BIM services in Australia. We specialize in Architectural, Structural & MEP solutions. Get a quote today.">
-    <meta property="og:image" content="https://scantobimservices1-dotcom.github.io/cad-drafting-services/assets/Logo.jpg">
-    <meta property="og:logo" content="https://scantobimservices1-dotcom.github.io/cad-drafting-services/assets/Logo.jpg">
-    
-    <!-- 12. Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@TeslaCAD">
-    <meta name="twitter:title" content="CAD Drafting Services Australia | Tesla CAD Solutions">
-    <meta name="twitter:description" content="Tesla CAD Solutions offers expert CAD Drafting & BIM services in Australia.">
-    <meta name="twitter:image" content="https://scantobimservices1-dotcom.github.io/cad-drafting-services/assets/Logo.jpg">
-    <meta name="twitter:image:alt" content="Tesla CAD Solutions Logo">
-    
-    <!-- 13. Organization and Website Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Tesla CAD Solutions",
-      "url": "https://www.teslacad.com.au/",
-      "logo": "https://scantobimservices1-dotcom.github.io/cad-drafting-services/assets/Logo.jpg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+61-48-999-7117",
-        "contactType": "customer service",
-        "areaServed": "AU",
-        "availableLanguage": "en"
-      }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Tesla CAD Solutions",
-      "url": "https://scantobimservices1-dotcom.github.io/cad-drafting-services/Blog.html",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://www.teslacad.com.au/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
     
     <script src="https://cdn.tailwindcss.com"></script>
-<!-- ... existing code ... -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            aqua: '#5CD7DB',
+                            black: '#000000',
+                            white: '#ffffff',
+                            border: '#d9e3e6',
+                            gray: '#595959',
+                            dark: '#293333',
+                            offwhite: '#F7FCFC',
+                            lightgray: '#d2d2d2'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        header: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .hero-overlay {
+            background: linear-gradient(rgba(41, 51, 51, 0.9), rgba(41, 51, 51, 0.75));
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom line clamp for blog descriptions */
+        .line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+        }
+        /* Category pill hover transition */
+        .category-pill {
+            transition: all 0.3s ease;
+        }
+        .category-pill:hover, .category-pill.active {
+            background-color: #5CD7DB;
+            color: #293333;
+            border-color: #5CD7DB;
+        }
+    </style>
 </head>
-<body class="font-sans text-brand-gray antialiased bg-brand-offwhite">
-
-    <!-- 14. GTM Body -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<body class="font-sans text-brand-gray antialiased bg-brand-offwhite flex flex-col min-h-screen">
 
     <!-- Navigation -->
     <nav class="bg-brand-white border-b border-brand-border fixed w-full z-50">
@@ -119,13 +77,15 @@
             <div class="flex justify-between h-20">
                 <div class="flex items-center">
                     <!-- Logo -->
-                    <a href="index.html" title="Tesla CAD Solutions Home Page" class="flex items-center">
-                        <img src="assets/Logo.jpg" alt="Tesla CAD Solutions Logo" title="Tesla CAD Solutions Logo" loading="eager" fetchpriority="high" width="150" height="80" style="height: 80px; width: auto;">
+                    <a href="index.html" class="flex items-center">
+                        <img src="https://scantobimservices1-dotcom.github.io/cad-drafting-services/assets/Logo.jpg" alt="Tesla CAD Solutions Company Logo" title="Tesla CAD Solutions Logo" width="200" height="80" style="height: 80px; width: auto;" onerror="this.src='https://placehold.co/200x80/ffffff/293333?text=Tesla+CAD'">
                     </a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#services" title="Navigate to CAD Services Section" class="text-brand-dark font-bold hover:text-brand-aqua transition hover-underline-animation">Services</a>
-                    <a href="Blog.html" title="Read our latest CAD Industry Blogs" class="text-brand-dark font-bold hover:text-brand-aqua transition hover-underline-animation">Blog</a>
+                    <a href="index.html#services" class="text-brand-dark font-bold hover:text-brand-aqua transition">Services</a>
+                    <a href="index.html#faq" class="text-brand-dark font-bold hover:text-brand-aqua transition">FAQ</a>
+                    <!-- Blog link is active -->
+                    <a href="Blog.html" class="text-brand-aqua font-bold border-b-2 border-brand-aqua pb-1">Blog</a>
                 </div>
                 
                 <div class="md:hidden flex items-center">
@@ -136,141 +96,300 @@
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-brand-white border-t border-brand-border">
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-white border-t border-brand-border absolute w-full shadow-lg">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#services" title="Navigate to CAD Services Section" class="block px-3 py-2 text-brand-aqua font-bold bg-brand-offwhite rounded">Services</a>
-                <a href="#blogs" title="Read our latest CAD Industry Blogs" class="block px-3 py-2 text-brand-aqua font-bold bg-brand-offwhite rounded">Blog</a>
+                <a href="index.html#services" class="block px-3 py-2 text-brand-dark font-bold hover:bg-brand-offwhite rounded">Services</a>
+                <a href="index.html#faq" class="block px-3 py-2 text-brand-dark font-bold hover:bg-brand-offwhite rounded">FAQ</a>
+                <a href="Blog.html" class="block px-3 py-2 text-brand-aqua font-bold bg-brand-offwhite rounded border-l-4 border-brand-aqua">Blog</a>
             </div>
         </div>
     </nav>
-<!-- ... existing code ... -->
-            <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light">
-                We transform conceptual designs into detailed 2D & 3D digital drawings. Partner with Australia's leading CAD company for Architectural, Structural, and MEP solutions.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#services" title="Explore our comprehensive CAD services" class="px-8 py-3 bg-brand-aqua text-brand-dark font-bold rounded shadow-lg hover:bg-brand-white transition duration-300">Explore Services</a>
-            </div>
-        </div>
-    </header>
-<!-- ... existing code ... -->
-                <div class="h-48 overflow-hidden">
-                    <img src="assets/CAD Drafting Sevices.webp" alt="Architectural CAD Drafting Services Blueprint" title="CAD Drafting Services" loading="lazy" width="400" height="192" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                </div>
-                <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold text-brand-dark mb-4">CAD Drafting Services</h3>
-                    <p class="text-brand-gray text-sm leading-relaxed mb-4 flex-grow">
-                        Right from conception to realization, we offer end-to-end Architectural CAD Drawing Services. We provide architectural construction drawings, 2D floor plans, sections, elevation drawings, and as-built drawings.
-                    </p>
-                    <a href="https://scantobimservices1-dotcom.github.io/cad-drafting-services/Blog.html" title="Learn more about our comprehensive CAD Drafting Services" class="text-brand-aqua font-bold text-sm hover:text-brand-dark transition mt-auto inline-flex items-center">Learn more <i class="fas fa-arrow-right text-xs ml-2"></i></a>
-                </div>
-            </div>
 
-            <!-- Structural Drafting -->
-            <div class="service-card bg-brand-white rounded-xl shadow-sm overflow-hidden transition duration-300 hover:shadow-xl border border-brand-border hover:border-brand-aqua group flex flex-col">
-                <div class="h-48 overflow-hidden">
-                    <img src="assets/Structural-BIM-Services.webp" alt="Structural BIM Modeling and Steel Detailing" title="Structural BIM Services" loading="lazy" width="400" height="192" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                </div>
-                <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold text-brand-dark mb-4">Structural BIM Services</h3>
-                    <p class="text-brand-gray text-sm leading-relaxed mb-4 flex-grow">
-                        We offer comprehensive Structural CAD Drafting Services for AEC firms. Our experts create precise Foundation Layouts, Structural Part Drawings, Erection Layouts, and Steel Plate Fabrication Drawings.
-                    </p>
-                    <a href="https://www.teslacad.com.au/structural-bim-services.php" title="Learn more about our Structural BIM Drafting Services" class="text-brand-aqua font-bold text-sm hover:text-brand-dark transition mt-auto inline-flex items-center">Learn more <i class="fas fa-arrow-right text-xs ml-2"></i></a>
-                </div>
-            </div>
-
-            <!-- MEP Drafting -->
-            <div class="service-card bg-brand-white rounded-xl shadow-sm overflow-hidden transition duration-300 hover:shadow-xl border border-brand-border hover:border-brand-aqua group flex flex-col">
-                <div class="h-48 overflow-hidden">
-                    <img src="assets/MEP BIM Solutions.webp" alt="Mechanical Electrical and Plumbing BIM Solutions" title="MEP BIM Solutions" loading="lazy" width="400" height="192" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                </div>
-                <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold text-brand-dark mb-4">MEP BIM Solutions</h3>
-                    <p class="text-brand-gray text-sm leading-relaxed mb-4 flex-grow">
-                        Specialized MEP drafting team providing quality HVAC, Electrical, and Plumbing solutions. We create MEP shop drawings, electrical plan layouts, and fire protection drawings that follow dimensional standards.
-                    </p>
-                    <a href="https://www.teslacad.com.au/mep-bim-services.php" title="Learn more about our Mechanical, Electrical, and Plumbing BIM Solutions" class="text-brand-aqua font-bold text-sm hover:text-brand-dark transition mt-auto inline-flex items-center">Learn more <i class="fas fa-arrow-right text-xs ml-2"></i></a>
-                </div>
-            </div>
-
-            <!-- Mechanical Drafting -->
-            <div class="service-card bg-brand-white rounded-xl shadow-sm overflow-hidden transition duration-300 hover:shadow-xl border border-brand-border hover:border-brand-aqua group flex flex-col">
-                <div class="h-48 overflow-hidden">
-                    <img src="assets/Mechanical Drafting Services.webp" alt="Detailed Mechanical Part and Assembly Drafting" title="Mechanical Drafting Services" loading="lazy" width="400" height="192" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                </div>
-                <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold text-brand-dark mb-4">Mechanical Drafting Services</h3>
-                    <p class="text-brand-gray text-sm leading-relaxed mb-4 flex-grow">
-                        Comprehensive Mechanical Drafting services ranging from simple design to complex Mechanical Part Drawings and Assembly drawings. We ensure reduced costs with high-quality results.
-                    </p>
-                    <a href="https://www.teslacad.com.au/mechanical-drafting-services.php" title="Learn more about our Mechanical CAD Drafting Services" class="text-brand-aqua font-bold text-sm hover:text-brand-dark transition mt-auto inline-flex items-center">Learn more <i class="fas fa-arrow-right text-xs ml-2"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- ... existing code ... -->
-            <!-- Post 1: Architectural Rendering -->
-            <article class="bg-brand-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition duration-300 border border-brand-border flex flex-col h-full group">
-                <div class="h-48 overflow-hidden">
-                    <img src="assets/The Role of Architectural Rendering in Modern Real Estate (1).webp" alt="A modern architectural 3D rendering of a residential property" title="Architectural Rendering in Real Estate" loading="lazy" width="400" height="192" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                </div>
-                <div class="p-5 flex flex-col flex-grow">
-                    <div class="flex justify-between items-center mb-3">
-                        <span class="text-xs font-bold text-brand-aqua uppercase">Real Estate</span>
-                        <span class="text-xs text-brand-lightgray">Jan 22, 2026</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-brand-dark mb-2 group-hover:text-brand-aqua transition cursor-pointer leading-tight">The Role of Architectural Rendering in Modern Real Estate</h3>
-                    <p class="text-brand-gray text-xs mb-4 line-clamp-3 flex-grow">
-                        In the high-stakes arena of real estate development, stakeholders are often tasked with selling the invisible. They are asking investors...
-                    </p>
-                    <a href="Role-of-Architectural-Rendering.html" title="Read full blog: The Role of Architectural Rendering in Modern Real Estate" class="text-xs font-bold text-brand-dark group-hover:text-brand-aqua inline-flex items-center mt-auto">Read Article <i class="fas fa-arrow-right ml-2 text-[10px]"></i></a>
-                </div>
-            </article>
-            
-            <!-- Post 2: BIM -->
-            <article class="bg-brand-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition duration-300 border border-brand-border flex flex-col h-full group">
-                <div class="h-48 overflow-hidden">
-                    <img src="assets/Aligning BIM with Modern Project Delivery Methods.webp" alt="Engineers reviewing a Building Information Model on a tablet" title="Aligning BIM with Project Delivery" loading="lazy" width="400" height="192" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                </div>
-                <div class="p-5 flex flex-col flex-grow">
-                    <div class="flex justify-between items-center mb-3">
-                        <span class="text-xs font-bold text-brand-aqua uppercase">BIM Services</span>
-                        <span class="text-xs text-brand-lightgray">Feb 1, 2026</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-brand-dark mb-2 group-hover:text-brand-aqua transition cursor-pointer leading-tight">The Perfect Pair: Aligning BIM with Modern Project Delivery Methods</h3>
-                    <p class="text-brand-gray text-xs mb-4 line-clamp-3 flex-grow">
-                        In an era where nearly 30% of construction costs are still attributed to rework and information mismanagement, the AEC industry is facing a digital reckoning.
-                    </p>
-                    <a href="Aligning BIM with Modern Project Delivery Methods.html" title="Read full blog: Aligning BIM with Modern Project Delivery Methods" class="text-xs font-bold text-brand-dark group-hover:text-brand-aqua inline-flex items-center mt-auto">Read Article <i class="fas fa-arrow-right ml-2 text-[10px]"></i></a>
-                </div>
-            </article>
-
-            <!-- Post 3: Precision CAD -->
-            <article class="bg-brand-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition duration-300 border border-brand-border flex flex-col h-full group">
-                <div class="h-48 overflow-hidden">
-                    <img src="assets/Exploring the Impact of 3D Rendering Across the AEC Industry.webp" alt="A high-quality 3D render of an commercial building exterior" title="3D Rendering Impact on AEC Industry" loading="lazy" width="400" height="192" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                </div>
-                <div class="p-5 flex flex-col flex-grow">
-                    <div class="flex justify-between items-center mb-3">
-                        <span class="text-xs font-bold text-brand-aqua uppercase">Drafting</span>
-                        <span class="text-xs text-brand-lightgray">Feb 5, 2025</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-brand-dark mb-2 group-hover:text-brand-aqua transition cursor-pointer leading-tight">Exploring the Impact of 3D Rendering Across the AEC Industry</h3>
-                    <p class="text-brand-gray text-xs mb-4 line-clamp-3 flex-grow">
-                        The AEC industry has undergone a significant shift in how projects are planned, presented, and delivered. Traditional drawings and technical plans are still essential, but they are no longer enough on their own.
-                    </p>
-                    <a href="Exploring the Impact of 3D Rendering Across the AEC Industry.html" title="Read full blog: Exploring the Impact of 3D Rendering Across the AEC Industry" class="text-xs font-bold text-brand-dark group-hover:text-brand-aqua inline-flex items-center mt-auto">Read Article <i class="fas fa-arrow-right ml-2 text-[10px]"></i></a>
-                </div>
-            </article>
-
+    <!-- Blog Hero Section -->
+    <header class="relative h-[400px] flex items-center justify-center text-center text-white pt-20">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0 pt-20">
+            <img src="image_519eef.jpg" alt="Modern Architecture and BIM Modeling Background" class="w-full h-full object-cover grayscale-[20%]">
+            <div class="hero-overlay absolute inset-0"></div>
         </div>
         
-        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 mt-12">
-            <a href="Blog.html" title="View all Tesla CAD Blogs and Articles" class="px-6 py-3 bg-brand-aqua text-brand-dark font-bold rounded hover:bg-brand-white hover:shadow-md transition duration-300 flex items-center">
-                View Full Blogs <i class="fas fa-chevron-right ml-2"></i>
-            </a>
+        <div class="relative z-10 max-w-3xl px-4 mx-auto mt-10">
+            <h1 class="text-4xl md:text-5xl font-header font-bold mb-4 leading-tight">
+                Industry Insights & <span class="text-brand-aqua">News</span>
+            </h1>
+            <p class="text-lg text-gray-200 mb-0 font-light">
+                Expert perspectives on CAD drafting, BIM coordination, architectural rendering, and the future of the AEC industry in Australia.
+            </p>
         </div>
-    </div>
-</section>
-<!-- ... existing code ... -->
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow py-12 bg-brand-offwhite">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Category Filters -->
+            <div class="flex flex-wrap items-center justify-center gap-3 mb-12">
+                <button class="category-pill active px-6 py-2 rounded-full border border-brand-border bg-brand-aqua text-brand-dark font-bold text-sm shadow-sm">All Articles</button>
+                <button class="category-pill px-6 py-2 rounded-full border border-brand-border bg-brand-white text-brand-gray font-bold text-sm hover:shadow-sm">BIM Services</button>
+                <button class="category-pill px-6 py-2 rounded-full border border-brand-border bg-brand-white text-brand-gray font-bold text-sm hover:shadow-sm">Drafting</button>
+                <button class="category-pill px-6 py-2 rounded-full border border-brand-border bg-brand-white text-brand-gray font-bold text-sm hover:shadow-sm">MEP</button>
+                <button class="category-pill px-6 py-2 rounded-full border border-brand-border bg-brand-white text-brand-gray font-bold text-sm hover:shadow-sm">Real Estate</button>
+            </div>
+
+            <!-- Featured Post (Spans 2 columns on lg screens) -->
+            <div class="mb-12">
+                <h2 class="text-2xl font-header font-bold text-brand-dark mb-6 flex items-center">
+                    <i class="fas fa-star text-brand-aqua mr-3"></i> Featured Article
+                </h2>
+                <article class="bg-brand-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 border border-brand-border flex flex-col md:flex-row group cursor-pointer">
+                    <div class="md:w-1/2 h-64 md:h-auto overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Engineers reviewing blueprints" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 bg-brand-dark text-brand-aqua text-xs font-bold px-3 py-1 rounded uppercase tracking-wider shadow-md">
+                            BIM Technology
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8 flex flex-col justify-center">
+                        <div class="flex items-center text-sm text-brand-lightgray mb-4 font-medium">
+                            <span><i class="far fa-calendar-alt mr-2"></i> Feb 15, 2026</span>
+                            <span class="mx-3 text-brand-border">|</span>
+                            <span><i class="far fa-clock mr-2"></i> 6 min read</span>
+                        </div>
+                        <h3 class="text-2xl lg:text-3xl font-header font-bold text-brand-dark mb-4 group-hover:text-brand-aqua transition leading-tight">
+                            The Evolution of Clash Detection in Modern MEP Systems
+                        </h3>
+                        <p class="text-brand-gray text-base mb-6 line-clamp-3 leading-relaxed">
+                            Discover how advanced 3D BIM clash detection is saving AEC firms millions by resolving structural and mechanical conflicts before they ever reach the construction site. We dive deep into Navisworks coordination workflows and best practices.
+                        </p>
+                        <div class="mt-auto flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://placehold.co/40x40/293333/ffffff?text=TS" alt="Author" class="w-10 h-10 rounded-full mr-3 border border-brand-border">
+                                <span class="text-sm font-bold text-brand-dark">Technical Team</span>
+                            </div>
+                            <a href="#" class="text-brand-aqua font-bold bg-brand-dark px-5 py-2 rounded hover:bg-brand-gray transition">Read More</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Standard Blog Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Post 1: Architectural Rendering -->
+                <article class="bg-brand-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 border border-brand-border flex flex-col h-full group hover:-translate-y-1">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Modern realistic 3D Architectural Rendering" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur text-brand-dark text-[10px] font-bold px-2 py-1 rounded shadow-sm">
+                            Real Estate
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs text-brand-gray mb-3 flex items-center">
+                            <i class="far fa-calendar-alt mr-2 text-brand-aqua"></i> Jan 22, 2026
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-3 group-hover:text-brand-aqua transition cursor-pointer leading-snug">
+                            <a href="#">The Role of Architectural Rendering in Modern Real Estate</a>
+                        </h3>
+                        <p class="text-brand-gray text-sm mb-5 line-clamp-3 flex-grow leading-relaxed">
+                            In the high-stakes arena of real estate development, stakeholders are often tasked with selling the invisible. They are asking investors to commit millions based on blueprints.
+                        </p>
+                        <a href="#" class="text-sm font-bold text-brand-dark group-hover:text-brand-aqua inline-flex items-center mt-auto border-t border-brand-border/50 pt-4">
+                            Read Article <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Post 2: BIM -->
+                <article class="bg-brand-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 border border-brand-border flex flex-col h-full group hover:-translate-y-1">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356f58?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Graph representing BIM integration" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur text-brand-dark text-[10px] font-bold px-2 py-1 rounded shadow-sm">
+                            BIM Services
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs text-brand-gray mb-3 flex items-center">
+                            <i class="far fa-calendar-alt mr-2 text-brand-aqua"></i> Feb 1, 2026
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-3 group-hover:text-brand-aqua transition cursor-pointer leading-snug">
+                            <a href="#">The Perfect Pair: Aligning BIM with Modern Project Delivery</a>
+                        </h3>
+                        <p class="text-brand-gray text-sm mb-5 line-clamp-3 flex-grow leading-relaxed">
+                            In an era where nearly 30% of construction costs are still attributed to rework and information mismanagement, the AEC industry is facing a digital reckoning.
+                        </p>
+                        <a href="#" class="text-sm font-bold text-brand-dark group-hover:text-brand-aqua inline-flex items-center mt-auto border-t border-brand-border/50 pt-4">
+                            Read Article <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post 3: Impact of 3D Rendering -->
+                <article class="bg-brand-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 border border-brand-border flex flex-col h-full group hover:-translate-y-1">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="3D rendering layout representing impact" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur text-brand-dark text-[10px] font-bold px-2 py-1 rounded shadow-sm">
+                            Drafting
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs text-brand-gray mb-3 flex items-center">
+                            <i class="far fa-calendar-alt mr-2 text-brand-aqua"></i> Feb 5, 2026
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-3 group-hover:text-brand-aqua transition cursor-pointer leading-snug">
+                            <a href="#">Exploring the Impact of 3D Rendering Across the AEC Industry</a>
+                        </h3>
+                        <p class="text-brand-gray text-sm mb-5 line-clamp-3 flex-grow leading-relaxed">
+                            The AEC industry has undergone a significant shift in how projects are planned, presented, and delivered. Traditional drawings are essential, but no longer enough.
+                        </p>
+                        <a href="#" class="text-sm font-bold text-brand-dark group-hover:text-brand-aqua inline-flex items-center mt-auto border-t border-brand-border/50 pt-4">
+                            Read Article <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post 4: Transitioning to Revit -->
+                <article class="bg-brand-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 border border-brand-border flex flex-col h-full group hover:-translate-y-1">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="AutoCAD to Revit Software transition" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur text-brand-dark text-[10px] font-bold px-2 py-1 rounded shadow-sm">
+                            Software & Tools
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs text-brand-gray mb-3 flex items-center">
+                            <i class="far fa-calendar-alt mr-2 text-brand-aqua"></i> Jan 10, 2026
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-3 group-hover:text-brand-aqua transition cursor-pointer leading-snug">
+                            <a href="#">Transitioning from AutoCAD to Revit: A Step-by-Step Guide</a>
+                        </h3>
+                        <p class="text-brand-gray text-sm mb-5 line-clamp-3 flex-grow leading-relaxed">
+                            Making the jump from traditional 2D drafting to parameter-based 3D modeling can seem daunting. We outline the most efficient strategies for upskilling your team.
+                        </p>
+                        <a href="#" class="text-sm font-bold text-brand-dark group-hover:text-brand-aqua inline-flex items-center mt-auto border-t border-brand-border/50 pt-4">
+                            Read Article <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post 5: Steel Detailing -->
+                <article class="bg-brand-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 border border-brand-border flex flex-col h-full group hover:-translate-y-1">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1541888087405-b31cf8a38185?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Structural steel construction framework" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur text-brand-dark text-[10px] font-bold px-2 py-1 rounded shadow-sm">
+                            Structural
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs text-brand-gray mb-3 flex items-center">
+                            <i class="far fa-calendar-alt mr-2 text-brand-aqua"></i> Dec 18, 2025
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-3 group-hover:text-brand-aqua transition cursor-pointer leading-snug">
+                            <a href="#">Understanding Structural Steel Detailing Standards in Australia</a>
+                        </h3>
+                        <p class="text-brand-gray text-sm mb-5 line-clamp-3 flex-grow leading-relaxed">
+                            Compliance is critical when designing structural components. A look at how accurate shop drawings align perfectly with AS 4100 guidelines to ensure safety.
+                        </p>
+                        <a href="#" class="text-sm font-bold text-brand-dark group-hover:text-brand-aqua inline-flex items-center mt-auto border-t border-brand-border/50 pt-4">
+                            Read Article <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post 6: Point Cloud -->
+                <article class="bg-brand-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 border border-brand-border flex flex-col h-full group hover:-translate-y-1">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Laser scanning tech in an industrial space" loading="lazy" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur text-brand-dark text-[10px] font-bold px-2 py-1 rounded shadow-sm">
+                            Scan to BIM
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs text-brand-gray mb-3 flex items-center">
+                            <i class="far fa-calendar-alt mr-2 text-brand-aqua"></i> Dec 05, 2025
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-3 group-hover:text-brand-aqua transition cursor-pointer leading-snug">
+                            <a href="#">Maximizing Accuracy: The Scan to BIM Workflow Explained</a>
+                        </h3>
+                        <p class="text-brand-gray text-sm mb-5 line-clamp-3 flex-grow leading-relaxed">
+                            Renovation projects rely heavily on precise existing conditions. Learn how point cloud data is converted into highly intelligent Revit models for historical preservation.
+                        </p>
+                        <a href="#" class="text-sm font-bold text-brand-dark group-hover:text-brand-aqua inline-flex items-center mt-auto border-t border-brand-border/50 pt-4">
+                            Read Article <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex justify-center items-center space-x-2 mt-16">
+                <button class="w-10 h-10 rounded border border-brand-border bg-brand-white text-brand-gray hover:text-brand-aqua hover:border-brand-aqua transition flex items-center justify-center" aria-label="Previous Page" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="w-10 h-10 rounded border border-brand-aqua bg-brand-aqua text-brand-dark font-bold flex items-center justify-center">1</button>
+                <button class="w-10 h-10 rounded border border-brand-border bg-brand-white text-brand-gray hover:text-brand-aqua hover:border-brand-aqua transition flex items-center justify-center">2</button>
+                <button class="w-10 h-10 rounded border border-brand-border bg-brand-white text-brand-gray hover:text-brand-aqua hover:border-brand-aqua transition flex items-center justify-center">3</button>
+                <span class="text-brand-gray mx-1">...</span>
+                <button class="w-10 h-10 rounded border border-brand-border bg-brand-white text-brand-gray hover:text-brand-aqua hover:border-brand-aqua transition flex items-center justify-center" aria-label="Next Page">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white py-12 border-t border-brand-gray/30 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="font-bold text-xl tracking-wide mb-6">Comprehensive CAD & BIM Services</p>
+            
+            <div class="flex justify-center space-x-6 mb-8 text-xl">
+                <a href="#" class="text-brand-gray hover:text-brand-aqua transition"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-brand-gray hover:text-brand-aqua transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-brand-gray hover:text-brand-aqua transition"><i class="fab fa-facebook"></i></a>
+            </div>
+
+            <div class="text-xs text-gray-500 pt-6 border-t border-brand-gray/20">
+                &copy; 2026 Tesla CAD Solutions. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle Logic
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', !isExpanded);
+            
+            // Toggle icon from hamburger to cross
+            const icon = btn.querySelector('i');
+            if(menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+
+        // Simple interactive demo for category pills
+        const pills = document.querySelectorAll('.category-pill');
+        pills.forEach(pill => {
+            pill.addEventListener('click', function() {
+                // Remove active class from all
+                pills.forEach(p => {
+                    p.classList.remove('active', 'bg-brand-aqua', 'text-brand-dark');
+                    p.classList.add('bg-brand-white', 'text-brand-gray');
+                });
+                
+                // Add active class to clicked
+                this.classList.remove('bg-brand-white', 'text-brand-gray');
+                this.classList.add('active', 'bg-brand-aqua', 'text-brand-dark');
+            });
+        });
+    </script>
+</body>
+</html>
